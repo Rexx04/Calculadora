@@ -98,9 +98,7 @@ namespace Calculadora
 
         private void btPunto_Click(object sender, EventArgs e)
         {
-            if (screen.Text == "0")
-                screen.Text += ".";
-            else
+            if(!screen.Text.Contains('.'))
                 screen.Text += ".";
         }
 
