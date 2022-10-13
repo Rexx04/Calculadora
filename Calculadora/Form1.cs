@@ -106,7 +106,7 @@ namespace Calculadora
         {
             if (screen.Text.Substring(0, 1) == "-")
                 screen.Text = screen.Text.Substring(1);
-            else
+            else if (!screen.Text.ToString().Equals("0"))
                 screen.Text = "-" + screen.Text;
         }
 
